@@ -23,31 +23,23 @@ Open up a windows powershell and run `npm i -g windows-build-tools`. This will t
 
 And install it. The website is http://git-scm.com and make sure you choose "for command prompt".
 
-### Download FFMPEG
+---
 
-Download FFMPEG from [this website](https://ffmpeg.zeranoe.com/builds/). Make sure to find the current **Static Build** for your OS Architecture (32bit/64bit).
+### FFMPEG をダウンロード
 
-### Install & Configure FFMPEG
+(64-bit) [ここをクリック](https://www.gyan.dev/ffmpeg/builds/ffmpeg-release-full.7z)して FFMPEG をダウンロードしましょう。</br>
+(32-bit) 少々古いですが、問題ありません。[ここをクリック](https://drive.google.com/uc?export=download&id=0B91Dn6OTKxuFU1hNc2hPWmZVVG8)して FFMPEG をダウンロードしましょう。
 
-Extract the files to the root of your harddrive, and rename the folder to `ffmpeg`. 
+### FFMPEG をインストール/設定
 
-**Then add FFMPEG to your Path variable:**
+ドライブの直下(c:\\)にファイルを解凍し、`ffmpeg` にリネームします。
 
-1. `windows key + x`
-2. go to system
-3. on the left Advanced system settings
-4. Environment Variables
-5. under System variables find the variable **Path** hit edit
-  * Depending on your version of windows you may have a list of entries or a semicolon sperated field of entries. 
+**それができたら、FFMPEG を環境変数に追加しましょう**
 
-**If Windows 10:**
+1. コマンドプロンプトを管理者で開きます。
+2. `setx Path "%path%;c:\ffmpeg\bin" /M` と打ち込みます。(手動ではなくこれをコピーすることをおすすめします)
 
-1. Hit the new button on the right
-2. add `c:\ffmpeg\bin`
-
-**If older versions of Windows:**
-
-1. add `;c:\ffmpeg\bin` to the end of the field.
+---
 
 ### Download and Install OhGodMusicBot
 
